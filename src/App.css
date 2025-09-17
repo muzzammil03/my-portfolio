@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+
+body.dark-mode {
+  background-color: #101010;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background-color: white;
+  color: #101010;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+@keyframes popText {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2) rotate(-2deg);
+  }
+  60% {
+    transform: scale(0.95) rotate(2deg);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animate-text {
+  animation: popText 0.5s ease-in-out;
+}
