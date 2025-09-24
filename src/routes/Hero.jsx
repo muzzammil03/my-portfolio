@@ -28,7 +28,7 @@ const Hero = ({ isDarkMode }) => {
     timeout = setTimeout(() => {
       setDisplayedText((prev) => prev + fullName[index]);
       setIndex(index + 1);
-    }, 300);
+    }, 200);
   }
 
   return () => clearTimeout(timeout);
