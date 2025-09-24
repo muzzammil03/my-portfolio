@@ -23,7 +23,7 @@ const Hero = ({ isDarkMode }) => {
     setTimeout(() => {
       audio.pause();
       audio.currentTime = 0;
-    }, 200); // stop before next character
+    }, 100); // stop before next character
 
     timeout = setTimeout(() => {
       setDisplayedText((prev) => prev + fullName[index]);
