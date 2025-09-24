@@ -103,10 +103,10 @@ const About = () => {
                 <strong>Languages:</strong> English, Hindi, Urdu
               </div>
               <div>
-                <strong>Email:</strong> muzzammilahmad62435@gmail.com
-              </div>
-              <div>
                 <strong>Mobile:</strong> +91 8109418626
+              </div>
+               <div>
+                <strong>Email:</strong> muzzammilahmad62435@gmail.com
               </div>
             </div>
 
