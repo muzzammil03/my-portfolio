@@ -66,7 +66,7 @@ const ProjectSection = ({ isDarkMode }) => {
               <img
                 src={project.imgSrc}
                 alt={project.title}
-                className="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition duration-300"
+                className="className="w-full h-64 object-cover transition duration-300"
               />
             </div>
             <div className="mt-4 flex-grow">
