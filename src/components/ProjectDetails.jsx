@@ -29,7 +29,7 @@ const ProjectDetail = ({ isDarkMode }) => {
   return (
     <div className={`max-w-5xl mx-auto px-4 py-24 sm:py-32 relative ${isDarkMode ? "bg-[#101010] text-white" : "bg-white text-gray-800"}`}>
       
-      {/* 🔙 Back Button */}
+      {/*Back Button */}
       <button
         onClick={() => navigate(-1)}
         className="mb-6 flex items-center gap-2 text-[#6c4ced] hover:gap-4 transition-all duration-300 group"
@@ -44,18 +44,21 @@ const ProjectDetail = ({ isDarkMode }) => {
       </h2>
 
       <div className="rounded-lg overflow-hidden shadow-lg mb-6">
-        <video
-          src={project.videoSrc}
-          className="w-full h-64 sm:h-96 object-cover"
-        controls
-       />
+        <iframe
+    src={project.videoSrc.replace("youtu.be", "www.youtube.com/embed")}
+    title={project.title}
+    className="w-full h-64 sm:h-96"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen
+  ></iframe>
       </div>
 
       <p className={`mb-6 leading-relaxed ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
         {project.description}
       </p>
 
-      {/* 🌐 Links */}
+      {/* Links */}
       <div className="flex gap-4 flex-wrap mb-10">
         {project.demoLink && (
           <a
