@@ -62,7 +62,7 @@ const ProjectSection = ({ isDarkMode }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {visibleProjects.map((project, index) => (
           <div key={index} className="flex flex-col">
-            <div className="overflow-hidden rounded-lg shadow group">
+            <div className="overflow-hidden rounded-lg ">
               <img
                 src={project.imgSrc}
                 alt={project.title}
