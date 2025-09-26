@@ -21,7 +21,7 @@ const Footer = () => {
             {["About", "Projects", "Contact"].map((label, i) => (
               <li key={i} className="relative group">
                 <a
-                  href={`/${label.toLowerCase().replace(" ", "")}`}
+                  href={`/${label.replace(" ", "")}`}
                   className="transition-colors duration-300"
                 >
                   {label}
