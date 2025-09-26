@@ -66,7 +66,7 @@ const ProjectSection = ({ isDarkMode }) => {
               <img
                 src={project.imgSrc}
                 alt={project.title}
-                className="className="w-full h-64 object-cover transition duration-300"
+                className="className="w-full h-64 object-cover"
               />
             </div>
             <div className="mt-4 flex-grow">
