@@ -5,7 +5,7 @@ const projects = [
   title: "Diwali Sales Analysis",
   category: "Data Analyst",
   imgSrc: "/images/p.png",  // Agar aapke paas project ka koi image hai to yahan daal sakte hain, warna generic placeholder rakh sakte hain
-  videoSrc: "https://youtu.be/79F2uWqIw08", // Agar koi demo video hai to yahan daalein, warna empty ya placeholder
+  videoSrc: "https://youtu.be/79F2uWqIw08",
   githubLink: "https://github.com/muzzammil03/diwali-sales-analysis",
   description: "A comprehensive data analysis project focused on Diwali sales trends using Python, Pandas, and data visualization libraries like Matplotlib and Seaborn. Includes data cleaning, exploratory data analysis, and actionable business insights.",
   techIcons: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"]
