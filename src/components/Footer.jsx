@@ -17,19 +17,19 @@ const Footer = () => {
             Muzzammil
           </h1>
 
-          <ul className="flex flex-wrap gap-6 justify-center md:justify-start font-medium items-center">
-            {["About", "Projects", "Contact"].map((label, i) => (
-              <li key={i} className="relative group">
-                <a
-                  href={`/${label.replace(" ", "")}`}
-                  className="transition-colors duration-300"
-                >
-                  {label}
-                </a>
-                <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 ease-in-out"></span>
-              </li>
-            ))}
-          </ul>
+        <ul className="flex flex-wrap gap-6 justify-center md:justify-start font-medium items-center">
+  {["About", "Projects", "Contact"].map((label, i) => (
+    <li key={i} className="relative group">
+      <Link
+        to={`/${label.replace(" ", "")}`}
+        className="transition-colors duration-300"
+      >
+        {label}
+      </Link>
+      <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 ease-in-out"></span>
+    </li>
+  ))}
+</ul>
 
           <a
             href="mailto:muzzammilahmad62435@gmail.com"
