@@ -55,9 +55,9 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
-        <Route path="/about" element={<About isDarkMode={isDarkMode} />} />
+        <Route path="/About" element={<About isDarkMode={isDarkMode} />} />
         <Route
-          path="/projects"
+          path="/Projects"
           element={<ProjectSection isDarkMode={isDarkMode} />}
         />
         <Route
