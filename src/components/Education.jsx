@@ -36,7 +36,7 @@ function Education() {
           ))}
         </div>
       </div>
-      <div class="w-full h-[6px] bg-[#6c4ced] "></div>
+      <div className="w-full h-[6px] bg-[#6c4ced] "></div>
     </div></motion.div>
   );
 }
