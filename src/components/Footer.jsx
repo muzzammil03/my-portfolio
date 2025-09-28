@@ -2,7 +2,7 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { FaBehanceSquare } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -17,14 +17,14 @@ const Footer = () => {
             Muzzammil
           </h1>
 
-        <ul className="flex flex-wrap gap-6 justify-center md:justify-start font-medium items-center">
-  {["About", "Projects", "Contact"].map((label, i) => (
+  <ul className="flex flex-wrap gap-6 justify-center md:justify-start font-medium items-center">
+  {["about", "projects", "contact"].map((label, i) => (
     <li key={i} className="relative group">
       <Link
-        to={`/${label.replace(" ", "")}`}
+        to={`/${label}`}
         className="transition-colors duration-300"
       >
-        {label}
+        {label.charAt(0).toUpperCase() + label.slice(1)}
       </Link>
       <span className="absolute left-0 -bottom-1 w-0 h-0.5 bg-white group-hover:w-full transition-all duration-300 ease-in-out"></span>
     </li>
