@@ -12,14 +12,15 @@ const About = () => {
   const handleImageClick = () => {
     if (isSpinning) return;
     setIsSpinning(true);
-    setTimeout(() => setIsSpinning(false), 600); // same as spin duration
+    setTimeout(() => setIsSpinning(false), 1200); // <--- yeh duration mismatch hai
   };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="...your hero classes"
+      className="py-12 px-4 sm:px-6 lg:px-8"
     >
       <div className="dark:bg-gray-900 dark:text-white transition-colors duration-500">
         {/* Heading */}
@@ -65,9 +66,13 @@ const About = () => {
                 transform: rotateY(720deg);
               }
             }
-            .animate-spin-fast {
-              animation: spin-fast 1.2s ease-out;
-            }
+            @keyframes spin-fast {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(720deg); }
+}
+.animate-spin-fast {
+  animation: spin-fast 1.2s ease-out; // 1.2s
+}
           `}</style>
           </div>
 
@@ -105,7 +110,7 @@ const About = () => {
               <div>
                 <strong>Mobile:</strong> +91 8109418626
               </div>
-               <div>
+              <div>
                 <strong>Email:</strong> muzzammilahmad62435@gmail.com
               </div>
             </div>
