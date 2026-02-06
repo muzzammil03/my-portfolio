@@ -142,7 +142,7 @@ const About = () => {
         </div>
 
         {/* Divider */}
-        <div className="w-[92%] mx-auto h-[6px] bg-[#6c4ced]"></div>
+        <div className="w-[92%] mx-auto h-[6px] bg-white"></div>
 
         {/* Education & Certificates */}
         <Education />
