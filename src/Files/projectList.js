@@ -9,6 +9,24 @@ const projects = [
   githubLink: "https://github.com/muzzammil03/diwali-sales-analysis",
   description: "A comprehensive data analysis project focused on Diwali sales trends using Python, Pandas, and data visualization libraries like Matplotlib and Seaborn. Includes data cleaning, exploratory data analysis, and actionable business insights.",
   techIcons: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"]
+},{
+  id: "netflix-recommendation-system",
+  title: "Netflix Recommendation System",
+  category: "Machine Learning",
+  imgSrc: "/images/netflix.png",
+  videoSrc: "",
+  githubLink: "https://github.com/muzzammil03/Netflix-Case-Study",
+  description: "Built a content-based movie recommendation system using machine learning techniques. Performed data preprocessing, feature engineering, and similarity-based recommendations to suggest relevant movies.",
+  techIcons: ["Python", "Pandas", "Scikit-learn", "NumPy", "Jupyter Notebook"]
+},{
+  id: "porter-case-study",
+  title: "Porter Delivery Analysis",
+  category: "Data Analysis",
+  imgSrc: "/images/porter.png",
+  videoSrc: "",
+  githubLink: "https://github.com/muzzammil03/Porter-Case-Study",
+  description: "Performed exploratory data analysis on Porter delivery data to identify operational trends, delivery performance, and business insights through statistical analysis and visualizations.",
+  techIcons: ["Python", "Pandas", "Matplotlib", "Seaborn"]
 },
 
   {
