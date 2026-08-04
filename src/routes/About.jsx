@@ -48,7 +48,7 @@ const About = () => {
                   handleImageClick();
                   playSound("/sounds/coin.wav");
                 }}
-                src="/images/profile.jpg"
+                src="/images/profile.png"
                 alt=""
                 className="w-full h-full object-cover rounded-full"
               />
