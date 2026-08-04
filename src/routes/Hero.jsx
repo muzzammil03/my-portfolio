@@ -83,7 +83,7 @@ const Hero = ({ isDarkMode }) => {
                     className={`select-none w-[90%] h-[90%] object-cover rounded-full border-16 border-[#6c4ced] transition-transform duration-700 ${
                       spin ? "animate-spin-fast" : ""
                     }`}
-                    src="/images/profile.jpg"
+                    src="/images/profile.png"
                     alt="Muzzammil Ahmed"
                   />
                 </div>
