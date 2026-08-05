@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import projects from "../Files/projectList";
 import { motion } from "framer-motion";
-const categories = ["All", "Python Project", "Data Analyst", "Web App"];
+const categories = ["All", "Python Project","Machine Learning","Agentic Ai", "Data Analyst", "Web App"];
 
 const ProjectSection = ({ isDarkMode }) => {
   const [selectedCategory, setSelectedCategory] = useState("All");
