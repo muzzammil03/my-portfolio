@@ -1,5 +1,14 @@
 const educationData = [
   {
+    degree: "Master of Technology - MTech, Computer Science Engineering",
+    institute: "All Saints' College of Technology, Bhopal (Affiliated to RGPV)",
+    duration: "Jul 2024 -  present",
+    grade: "7.69 CGPA",
+    description:
+      "Currently pursuing a Master's degree in Computer Science, with a focus on Artificial Intelligence and Machine Learning. My academic work includes research on a hybrid machine learning approach for heart disease prediction, along with hands-on work in machine learning, deep learning, NLP, and AI.",
+  skills: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Research"]
+  },
+  {
     degree: "Bachelor of Technology - BTech, Computer Science Engineering",
     institute: "All Saints' College of Technology, Bhopal (Affiliated to RGPV)",
     duration: "Oct 2020 - Jul 2024",
