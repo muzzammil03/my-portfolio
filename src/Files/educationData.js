@@ -9,14 +9,14 @@ const educationData = [
   skills: ["Artificial Intelligence", "Machine Learning", "Deep Learning", "Research"]
   },
   {
-    degree: "Bachelor of Technology - BTech, Computer Science Engineering",
-    institute: "All Saints' College of Technology, Bhopal (Affiliated to RGPV)",
-    duration: "Oct 2020 - Jul 2024",
-    grade: "8.32 CGPA",
-    description:
-      "I recently graduated with a Bachelor's in Computer Science from All Saints College affiliated with RGPV, achieving a CGPA of 8.32. I was equipped with a strong foundation in programming and software development through rigorous coursework and hands-on projects. Passionate about leveraging technology to address challenges, I am eager to contribute effectively to the tech industry, driven by a commitment to continuous learning and professional growth.",
-    skills: ["Engineering"]
-  },
+  degree: "Bachelor of Technology - BTech, Computer Science Engineering",
+  institute: "All Saints' College of Technology, Bhopal (Affiliated to RGPV)",
+  duration: "Oct 2020 - Jul 2024",
+  grade: "8.32 CGPA",
+  description:
+    "Completed my Bachelor's degree in Computer Science Engineering with a CGPA of 8.32. Built a strong foundation in programming, software development, data analytics, and machine learning through academic coursework and hands-on projects. Developed an interest in applying technology to solve real-world problems.",
+  skills: ["Computer Science", "Programming", "Software Development"]
+},
   {
     degree: "Higher Secondary Education (11th & 12th) - PCM",
     institute: "Royal Higher Secondary School, Bhopal",
