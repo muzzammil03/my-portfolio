@@ -1,4 +1,11 @@
 const certificatesData = [
+    {
+    name: "The Data Science Course: Complete Data Science Bootcamp 2026",
+    issuedBy: "Udemy",
+    year: "Aug 2026",
+    certificateLink: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-89524894-85fd-4d40-89f3-61d57c2ffd3a.pdf",
+    image: "/images/c7.png",
+  },
   {
     name: "Python for Data Analytics - Beginner to Advanced",
     issuedBy: "Udemy",
