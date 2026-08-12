@@ -79,24 +79,24 @@ const About = () => {
           {/* Text Section */}
           <div className="mt-10 md:mt-0 md:ml-16 text-center md:text-left">
             <h3 className="text-3xl font-semibold mt-12">Muzzammil Ahmed</h3>
-            <p className="text-lg">Web Developer and Data Analyst</p>
+            <p className="text-lg">AI/ML Engineer and Data Analyst</p>
             <p className="mt-4 max-w-md">
-              I am a passionate Web Developer with a strong foundation in MERN
-              Stack and Data Analytics. I love creating interactive and
-              user-friendly web applications while constantly exploring new
-              technologies. With experience in React.js, JavaScript, and Power
-              BI, I strive to build efficient and visually appealing digital
-              solutions. 🚀
+              I am a Computer Science postgraduate with a strong interest in
+  Artificial Intelligence, Machine Learning, and Data Analytics. I have
+  hands-on experience with Python, SQL, Machine Learning, Data Analysis,
+  and Power BI, along with a background in web development. I enjoy
+  solving real-world problems through data-driven and intelligent
+  solutions while continuously learning and exploring new technologies. 🚀
             </p>
 
             {/* Personal Info Grid */}
             <div className="mt-6 grid grid-cols-2 gap-4 text-m max-w-sm mx-auto md:mx-0 text-left">
               <div>
-                <strong>Role:</strong> Web Developer, Data Analyst
-              </div>
-              <div>
-                <strong>Experience:</strong> Fresher
-              </div>
+             <strong>Role:</strong> AI/ML Engineer, Data Analyst
+            </div>
+            <div>
+            <strong>Experience:</strong> AI/ML Training Experience
+            </div>
               <div>
                 <strong>Residence:</strong> Bhopal, Madhya Pradesh, India
               </div>
@@ -111,7 +111,7 @@ const About = () => {
                 <strong>Mobile:</strong> +91 8109418626
               </div>
               <div>
-                <strong>Email:</strong> muzzammilahmad62435@gmail.com
+                <strong>Email:</strong> muzzammil.cse3@gmail.com
               </div>
             </div>
 
