@@ -1,4 +1,14 @@
 const projects = [
+    {
+    id: "rag-chatbot",
+    title: "RAG Chatbot",
+    category: "AI-ML",
+    imgSrc: "/images/p16.png",
+    videoSrc: "https://youtu.be/_mbfXx28wk4",
+    githubLink: "https://github.com/muzzammil03/RAG-chatbot",
+    description: "An AI-powered Retrieval-Augmented Generation (RAG) chatbot designed to answer questions from a custom knowledge base. The project combines document processing, text chunking, semantic embeddings, vector similarity search, and large language model generation to retrieve relevant information before generating context-aware responses. It demonstrates how RAG can reduce hallucinations and provide more reliable answers by grounding responses in retrieved documents.",
+    techIcons: ["Python", "LangChain", "FAISS", "Hugging Face", "Groq"]
+  },
   {
     id: "diwali-sales-analysis",
     title: "Diwali Sales Analysis",
@@ -13,7 +23,7 @@ const projects = [
     id: "netflix-recommendation-system",
     title: "Netflix Recommendation System",
     category: "AI-ML",
-    imgSrc: "/images/netflix.png",
+    imgSrc: "/images/p13.png",
     videoSrc: "",
     githubLink: "https://github.com/muzzammil03/Netflix-Case-Study",
     description: "Built a content-based movie recommendation system using machine learning techniques to suggest relevant titles based on similarity in genre, cast, and description. The project involves extensive data preprocessing and feature engineering on the Netflix dataset, followed by vectorization of text-based features and computing similarity scores between titles. The result is a working recommendation engine that, given a movie or show a user likes, returns a ranked list of similar content, demonstrating a practical application of unsupervised learning and text-based similarity techniques.",
@@ -23,8 +33,8 @@ const projects = [
     id: "porter-case-study",
     title: "Porter Delivery Analysis",
     category: "AI-ML",
-    imgSrc: "/images/porter.png",
-    videoSrc: "",
+    imgSrc: "/images/p14.png",
+    videoSrc: "https://youtu.be/lsgBkp2ZOR0",
     githubLink: "https://github.com/muzzammil03/Porter-Case-Study",
     description: "An in-depth exploratory data analysis of Porter's delivery operations data, aimed at identifying patterns in delivery times, order volumes, and operational bottlenecks. The project covers data cleaning, feature extraction from timestamps, and statistical analysis to uncover relationships between factors like time of day, number of items, and delivery duration. Visualizations were used to highlight peak demand periods and performance trends, providing insights that could help optimize delivery efficiency and resource allocation for a logistics business.",
     techIcons: ["Python", "Pandas", "Matplotlib", "Seaborn"]
@@ -33,8 +43,8 @@ const projects = [
     id: "face-mask-detection",
     title: "Face Mask Detection",
     category: "AI-ML",
-    imgSrc: "/images/face-mask.png",
-    videoSrc: "",
+    imgSrc: "/images/p15.png",
+    videoSrc: "https://youtu.be/B0Z6FZz1EXY",
     githubLink: "https://github.com/muzzammil03/face-mask-detection-",
     description: "A deep learning project that uses a Convolutional Neural Network (CNN) to detect whether a person is wearing a face mask or not, in real time. The model was trained on an image dataset and processes input using OpenCV for face detection before classification. The final application is deployed using Streamlit, providing a simple web interface where users can upload an image and instantly get a prediction along with confidence scores, making it a practical demonstration of computer vision applied to public health scenarios.",
     techIcons: ["Python", "TensorFlow", "Keras", "OpenCV", "NumPy", "Streamlit"]
@@ -84,8 +94,8 @@ const projects = [
     id: "video-game-sales-dashboard",
     title: "Video Game Sales Dashboard",
     category: "Data Analyst",
-    imgSrc: "/images/video-game-dashboard.png",
-    videoSrc: "",
+    imgSrc: "/images/p12.png",
+    videoSrc: "https://youtu.be/3LDxxbiIm-Q",
     githubLink: "https://github.com/muzzammil03/video-game-sales-dashboard",
     description: "An interactive Power BI dashboard built to analyze global video game sales trends across platforms, genres, and years. The report includes a line chart tracking global sales growth over time, a visualization of the number of games released per year, a donut chart breaking down sales by platform, and a bar chart comparing sales across genres. Summary cards highlight key metrics like EU sales, while a platform-based slicer allows users to dynamically filter the entire dashboard, making it easy to explore trends within the video game industry using DAX-powered calculations.",
     techIcons: ["Power BI", "DAX"]
