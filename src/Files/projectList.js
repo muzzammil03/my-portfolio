@@ -1,34 +1,44 @@
 const projects = [
-  // https://github.com/muzzammil03/diwali-sales-analysis
-   {
-  id: "diwali-sales-analysis",
-  title: "Diwali Sales Analysis",
-  category: "Data Analyst",
-  imgSrc: "/images/p.png",  // Agar aapke paas project ka koi image hai to yahan daal sakte hain, warna generic placeholder rakh sakte hain
-  videoSrc: "https://youtu.be/79F2uWqIw08",
-  githubLink: "https://github.com/muzzammil03/diwali-sales-analysis",
-  description: "A comprehensive data analysis project focused on Diwali sales trends using Python, Pandas, and data visualization libraries like Matplotlib and Seaborn. Includes data cleaning, exploratory data analysis, and actionable business insights.",
-  techIcons: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"]
-},{
-  id: "netflix-recommendation-system",
-  title: "Netflix Recommendation System",
-  category: "AI-ML",
-  imgSrc: "/images/netflix.png",
-  videoSrc: "",
-  githubLink: "https://github.com/muzzammil03/Netflix-Case-Study",
-  description: "Built a content-based movie recommendation system using machine learning techniques. Performed data preprocessing, feature engineering, and similarity-based recommendations to suggest relevant movies.",
-  techIcons: ["Python", "Pandas", "Scikit-learn", "NumPy", "Jupyter Notebook"]
-},{
-  id: "porter-case-study",
-  title: "Porter Delivery Analysis",
-  category: "AI-ML",
-  imgSrc: "/images/porter.png",
-  videoSrc: "",
-  githubLink: "https://github.com/muzzammil03/Porter-Case-Study",
-  description: "Performed exploratory data analysis on Porter delivery data to identify operational trends, delivery performance, and business insights through statistical analysis and visualizations.",
-  techIcons: ["Python", "Pandas", "Matplotlib", "Seaborn"]
-},
-
+  {
+    id: "diwali-sales-analysis",
+    title: "Diwali Sales Analysis",
+    category: "Data Analyst",
+    imgSrc: "/images/p.png",
+    videoSrc: "https://youtu.be/79F2uWqIw08",
+    githubLink: "https://github.com/muzzammil03/diwali-sales-analysis",
+    description: "A comprehensive data analysis project focused on uncovering Diwali sales trends using Python, Pandas, and data visualization libraries like Matplotlib and Seaborn. The project involves cleaning raw sales data, handling missing values, and performing exploratory data analysis to understand customer behavior across different age groups, cities, and product categories. Key insights include identifying top-performing states, best-selling product categories, and customer demographics that contribute most to revenue, ultimately translating raw numbers into clear, actionable business recommendations.",
+    techIcons: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"]
+  },
+  {
+    id: "netflix-recommendation-system",
+    title: "Netflix Recommendation System",
+    category: "AI-ML",
+    imgSrc: "/images/netflix.png",
+    videoSrc: "",
+    githubLink: "https://github.com/muzzammil03/Netflix-Case-Study",
+    description: "Built a content-based movie recommendation system using machine learning techniques to suggest relevant titles based on similarity in genre, cast, and description. The project involves extensive data preprocessing and feature engineering on the Netflix dataset, followed by vectorization of text-based features and computing similarity scores between titles. The result is a working recommendation engine that, given a movie or show a user likes, returns a ranked list of similar content, demonstrating a practical application of unsupervised learning and text-based similarity techniques.",
+    techIcons: ["Python", "Pandas", "Scikit-learn", "NumPy", "Jupyter Notebook"]
+  },
+  {
+    id: "porter-case-study",
+    title: "Porter Delivery Analysis",
+    category: "AI-ML",
+    imgSrc: "/images/porter.png",
+    videoSrc: "",
+    githubLink: "https://github.com/muzzammil03/Porter-Case-Study",
+    description: "An in-depth exploratory data analysis of Porter's delivery operations data, aimed at identifying patterns in delivery times, order volumes, and operational bottlenecks. The project covers data cleaning, feature extraction from timestamps, and statistical analysis to uncover relationships between factors like time of day, number of items, and delivery duration. Visualizations were used to highlight peak demand periods and performance trends, providing insights that could help optimize delivery efficiency and resource allocation for a logistics business.",
+    techIcons: ["Python", "Pandas", "Matplotlib", "Seaborn"]
+  },
+  {
+    id: "face-mask-detection",
+    title: "Face Mask Detection",
+    category: "AI-ML",
+    imgSrc: "/images/face-mask.png",
+    videoSrc: "",
+    githubLink: "https://github.com/muzzammil03/face-mask-detection-",
+    description: "A deep learning project that uses a Convolutional Neural Network (CNN) to detect whether a person is wearing a face mask or not, in real time. The model was trained on an image dataset and processes input using OpenCV for face detection before classification. The final application is deployed using Streamlit, providing a simple web interface where users can upload an image and instantly get a prediction along with confidence scores, making it a practical demonstration of computer vision applied to public health scenarios.",
+    techIcons: ["Python", "TensorFlow", "Keras", "OpenCV", "NumPy", "Streamlit"]
+  },
   {
     id: "swiggy-clone",
     title: "Swiggy Clone",
@@ -37,7 +47,7 @@ const projects = [
     videoSrc: "https://youtu.be/vwjQ9tMbG4I",
     demoLink: "https://my-swiggy-clone.netlify.app/",
     githubLink: "https://github.com/muzzammil03/Swiggy-clone",
-    description: "A React-based clone of the Swiggy app that integrates a live API for food delivery services.",
+    description: "A React-based clone of the Swiggy food delivery app, built to replicate the core browsing experience of the original platform. The app fetches live restaurant and menu data from an API and renders it through a responsive, component-based UI. It includes features like restaurant listings with ratings and cuisine tags, dynamic filtering, and a clean, mobile-friendly layout, showcasing practical use of React hooks, API integration, and state management for building real-world consumer-facing applications.",
     techIcons: ["React.js", "HTML5", "CSS3"]
   },
   {
@@ -46,9 +56,8 @@ const projects = [
     category: "Data Analyst",
     imgSrc: "/images/p2.png",
     videoSrc: "https://youtu.be/J4wXHCqV88k",
-    // demoLink: "https://github.com/muzzammil03/vrindaStroreDashboard",
     githubLink: "https://github.com/muzzammil03/vrindaStroreDashboard",
-    description: "An Excel-based store management dashboard built for tracking sales and inventory.",
+    description: "An Excel-based store management dashboard designed to help track sales performance and inventory levels for a retail business. The dashboard consolidates raw sales and stock data into organized, easy-to-read visuals, including summary metrics, trend charts, and category-wise breakdowns. It enables quick identification of best-selling products, stock shortages, and overall sales trends, demonstrating how spreadsheet tools can be used to build functional, decision-support dashboards without relying on dedicated BI software.",
     techIcons: ["Excel", "Dashboard"]
   },
   {
@@ -57,9 +66,8 @@ const projects = [
     category: "Data Analyst",
     imgSrc: "/images/p3.png",
     videoSrc: "https://youtu.be/SVnueDSnShI",
-    // demoLink: "https://github.com/muzzammil03/-Zomato-Data-Analysis-Project",
     githubLink: "https://github.com/muzzammil03/-Zomato-Data-Analysis-Project",
-    description: "A data analysis project using Zomato's restaurant data to visualize trends in the food industry.",
+    description: "A data analysis project built on Zomato's restaurant dataset, aimed at uncovering trends across the food and restaurant industry. The analysis covers restaurant ratings, cuisine popularity, pricing patterns, and city-wise distribution of restaurants, using Python for data cleaning and Seaborn for creating clear, insightful visualizations. The project highlights how factors like online ordering availability and table booking options correlate with customer ratings, offering a data-driven perspective on what makes restaurants successful.",
     techIcons: ["Python", "Pandas", "NumPy", "Seaborn"]
   },
   {
@@ -68,67 +76,42 @@ const projects = [
     category: "Data Analyst",
     imgSrc: "/images/p4.png",
     videoSrc: "https://youtu.be/L58s8i9dS5w",
-    // demoLink: "https://github.com/muzzammil03/Madav_Ecommerce_Sales_Dashboard",
     githubLink: "https://github.com/muzzammil03/Madav_Ecommerce_Sales_Dashboard",
-    description: "A Power BI dashboard designed to visualize ecommerce sales data and provide insights.",
+    description: "A Power BI dashboard built to visualize and analyze ecommerce sales data for better business decision-making. The report brings together key metrics like revenue trends, product-category performance, and regional sales distribution into a single interactive view. Using DAX measures and dynamic filters, the dashboard allows stakeholders to drill down into specific time periods or product lines, turning raw transactional data into a clear, actionable overview of business performance.",
     techIcons: ["Power BI"]
   },
-  // {
-  //   id: "my-notepad",
-  //   title: "My Notepad",
-  //   category: "Python Project",
-  //   imgSrc: "/images/p5.png", // thumbnail or image preview
-  //   videoSrc: "", // optional
-  //   // demoLink: "#",
-  //   githubLink: "https://github.com/muzzammil03/Python-projects/tree/main/my-notepad",
-  //   description: "My Notepad is a basic text editor developed in Python that allows users to create, save, and open text files. The application provides a simple user interface for text editing, with features like saving files with custom names, opening existing text files, and editing them as needed. It helps users manage notes or other textual content in a lightweight and easy-to-use platform.",
-  //   techIcons: ["Python"]
-  // },
-  // {
-  //   id: "calculator",
-  //   title: "Calculator",
-  //   category: "Python Project",
-  //   imgSrc: "/images/p8.png",
-  //   videoSrc: "/videos/calc.mp4",
-  //   // demoLink: "#",
-  //   githubLink: "https://github.com/muzzammil03/Python-projects/tree/main/Calculator",
-  //   description: "This Python-based calculator allows users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division. It features a clean user interface with an easy-to-navigate layout. It’s built with a focus on usability and simplicity, ensuring that even beginners can use it efficiently. The project could be extended to include additional functions like square roots, percentages, or scientific calculations in future versions.",
-  //   techIcons: ["Python"]
-  // },
-  // {
-  //   id: "text-to-speech",
-  //   title: "Text to Speech",
-  //   category: "Python Project",
-  //   imgSrc: "/images/p9.png",
-  //   videoSrc: "/videos/TTS.mp4",
-  //   // demoLink: "#",
-  //   githubLink: "https://github.com/muzzammil03/Python-projects/tree/main/text%20to%20speech",
-  //   description: "The Text to Speech project converts typed text into audible speech using Python. It utilizes libraries such as pyttsx3, which allow for text to be read aloud in a clear, natural-sounding voice. This project is useful for people with visual impairments, language learners, or anyone who wants to listen to text content rather than read it. The application supports multiple languages and can be customized to change the pitch, speed, and voice.",
-  //   techIcons: ["Python"]
-  // },
+  {
+    id: "video-game-sales-dashboard",
+    title: "Video Game Sales Dashboard",
+    category: "Data Analyst",
+    imgSrc: "/images/video-game-dashboard.png",
+    videoSrc: "",
+    githubLink: "https://github.com/muzzammil03/video-game-sales-dashboard",
+    description: "An interactive Power BI dashboard built to analyze global video game sales trends across platforms, genres, and years. The report includes a line chart tracking global sales growth over time, a visualization of the number of games released per year, a donut chart breaking down sales by platform, and a bar chart comparing sales across genres. Summary cards highlight key metrics like EU sales, while a platform-based slicer allows users to dynamically filter the entire dashboard, making it easy to explore trends within the video game industry using DAX-powered calculations.",
+    techIcons: ["Power BI", "DAX"]
+  },
   {
     id: "topcourses",
     title: "TopCourses",
     category: "Frontend Web App",
-    imgSrc: "/images/p10.png", // thumbnail or video preview
-    videoSrc: "https://youtu.be/WQw3eBXRzYU", // optional
+    imgSrc: "/images/p10.png",
+    videoSrc: "https://youtu.be/WQw3eBXRzYU",
     demoLink: "https://top-coursess-app.netlify.app/",
     githubLink: "https://github.com/muzzammil03/topcourses",
-    description: "TopCourses is a web application built with React.js that helps users browse and discover top online courses from various platforms like Udemy, Coursera, and edX. The platform aggregates course listings across different categories and allows users to filter by topic, price, ratings, and more. Each course entry provides key details like a brief overview, rating, and direct links to the course page. The app also enables users to create a personalized list of courses they are interested in.",
+    description: "TopCourses is a web application built with React.js that helps users browse and discover top online courses from various platforms like Udemy, Coursera, and edX. The platform aggregates course listings across different categories and allows users to filter by topic, price, ratings, and more. Each course entry provides key details like a brief overview, rating, and direct links to the course page. The app also enables users to create a personalized list of courses they are interested in, making the process of finding the right course faster and more organized.",
     techIcons: ["React.js"]
   },
   {
     id: "text-modifier",
     title: "Text Modifier",
     category: "Frontend Web App",
-    imgSrc: "/images/p11.png", // update this path as needed
-    videoSrc: "", // optional, update if you have a preview
-    demoLink: "https://mytextmodifire.netlify.app/", // update if deployed
+    imgSrc: "/images/p11.png",
+    videoSrc: "",
+    demoLink: "https://mytextmodifire.netlify.app/",
     githubLink: "https://github.com/muzzammil03/my-app",
-    description: "Text Modifier is a simple React.js-based web application that allows users to perform various text transformations such as converting text to uppercase/lowercase, removing extra spaces, copying text to clipboard, and counting words and characters. It provides a minimalistic and responsive interface for quick and efficient text manipulation, useful for students, content creators, and developers.",
+    description: "Text Modifier is a simple React.js-based web application that allows users to perform various text transformations such as converting text to uppercase/lowercase, removing extra spaces, copying text to clipboard, and counting words and characters. It provides a minimalistic and responsive interface for quick and efficient text manipulation, built with clean component structure and real-time state updates, making it a useful lightweight tool for students, content creators, and developers who need fast text utilities without opening a full text editor.",
     techIcons: ["React.js"]
   }
-  
 ];
 
 export default projects;
