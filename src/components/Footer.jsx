@@ -32,10 +32,10 @@ const Footer = () => {
 </ul>
 
           <a
-            href="mailto:muzzammilahmad62435@gmail.com"
+            href="mailto:muzzammil.cse3@gmail.com"
             className="text-sm hover:underline"
           >
-            muzzammilahmad62435@gmail.com
+            muzzammil.cse3@gmail.com
           </a>
         </div>
 
