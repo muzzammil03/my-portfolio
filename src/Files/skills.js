@@ -1,42 +1,38 @@
 const skills = [
-  { src: "https://cdn.simpleicons.org/html5", alt: "HTML" },
-  { src: "https://cdn.simpleicons.org/css", alt: "CSS" },
-  { src: "https://cdn.simpleicons.org/javascript", alt: "JavaScript" },
-  { src: "https://cdn.simpleicons.org/bootstrap", alt: "Bootstrap" },
-  { src: "https://cdn.simpleicons.org/tailwindcss", alt: "Tailwind CSS" },
-  { src: "https://cdn.simpleicons.org/react", alt: "React" },
-  { src: "https://cdn.simpleicons.org/nodedotjs", alt: "Node.js" },
-  { src: "https://cdn.simpleicons.org/mysql", alt: "MySQL" },
-  { src: "https://cdn.simpleicons.org/express", alt: "Express.js" },
-  { src: "https://cdn.simpleicons.org/mongodb", alt: "MongoDB" },
-  { src: "https://cdn.simpleicons.org/firebase", alt: "Firebase" },
-  { src: "https://cdn.simpleicons.org/github", alt: "GitHub" },
-  { src: "https://cdn.simpleicons.org/visualstudiocode", alt: "VS Code" },
-  { src: "https://cdn.simpleicons.org/canva", alt: "Canva" },
-  { src: "https://cdn.simpleicons.org/figma", alt: "Figma" },
-  { src: "https://cdn.simpleicons.org/openai", alt: "ChatGPT" },
-  { src: "https://cdn.simpleicons.org/netlify", alt: "Netlify" },
+  // Frontend
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/html5.svg", alt: "HTML" },
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/css.svg", alt: "CSS" },
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/javascript.svg", alt: "JavaScript" },
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/bootstrap.svg", alt: "Bootstrap" },
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/tailwindcss.svg", alt: "Tailwind CSS" },
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/react.svg", alt: "React" },
 
-  // Power BI — Microsoft's own official icon repo (verified)
-  {
-    src: "https://raw.githubusercontent.com/microsoft/PowerBI-Icons/main/PNG/Power%20BI.png",
-    alt: "Power BI",
-  },
+  // Backend
+  // { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/nodedotjs.svg", alt: "Node.js" },
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/mysql.svg", alt: "MySQL" },
+  // { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/express.svg", alt: "Express.js" },
+  // { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/mongodb.svg", alt: "MongoDB" },
+  // { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/firebase.svg", alt: "Firebase" },
 
-  // Data Science & ML Tools
-  { src: "https://cdn.simpleicons.org/numpy", alt: "NumPy" },
-  { src: "https://cdn.simpleicons.org/pandas", alt: "Pandas" },
-  {
-    src: "https://seaborn.pydata.org/_static/logo-wide-lightbg.svg",
-    alt: "Seaborn",
-  }, // Seaborn has no simple-icons entry yet — kept your original official-site link
-  {
-    src: "https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg",
-    alt: "SciPy",
-  }, // Wikimedia link, verified working
-  { src: "https://cdn.simpleicons.org/scikitlearn", alt: "Scikit-learn" },
-  { src: "https://cdn.simpleicons.org/huggingface", alt: "Hugging Face" },
-  { src: "https://cdn.simpleicons.org/langchain", alt: "LangChain" },
+  // Tools
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg", alt: "GitHub" },
+  { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg", alt: "VS Code" },
+  { src: "https://raw.githubusercontent.com/devicons/devicon/master/icons/canva/canva-original.svg", alt: "Canva" },
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/figma.svg", alt: "Figma" },
+  { src: "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-png/light/openai.png", alt: "ChatGPT" },
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/netlify.svg", alt: "Netlify" },
+
+  // Power BI (Microsoft official)
+  { src: "https://raw.githubusercontent.com/microsoft/PowerBI-Icons/main/PNG/Power-BI.png", alt: "Power BI" },
+
+  // Data Science & ML
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/numpy.svg", alt: "NumPy" },
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/pandas.svg", alt: "Pandas" },
+  { src: "https://seaborn.pydata.org/_static/logo-wide-lightbg.svg", alt: "Seaborn" },
+  { src: "https://upload.wikimedia.org/wikipedia/commons/b/b2/SCIPY_2.svg", alt: "SciPy" },
+  { src: "https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/scikitlearn.svg", alt: "Scikit-learn" },
+  { src: "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-png/light/huggingface-color.png", alt: "Hugging Face" },
+  { src: "https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-png/light/langchain-color.png", alt: "LangChain" },
 ];
 
 export default skills;
