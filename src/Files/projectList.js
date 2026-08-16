@@ -12,7 +12,7 @@ const projects = [
 },{
   id: "netflix-recommendation-system",
   title: "Netflix Recommendation System",
-  category: "Machine Learning",
+  category: "AI-ML",
   imgSrc: "/images/netflix.png",
   videoSrc: "",
   githubLink: "https://github.com/muzzammil03/Netflix-Case-Study",
@@ -21,7 +21,7 @@ const projects = [
 },{
   id: "porter-case-study",
   title: "Porter Delivery Analysis",
-  category: "Data Analysis",
+  category: "AI-ML",
   imgSrc: "/images/porter.png",
   videoSrc: "",
   githubLink: "https://github.com/muzzammil03/Porter-Case-Study",
@@ -32,7 +32,7 @@ const projects = [
   {
     id: "swiggy-clone",
     title: "Swiggy Clone",
-    category: "Web App",
+    category: "Frontend Web App",
     imgSrc: "/images/p1.png",
     videoSrc: "https://youtu.be/vwjQ9tMbG4I",
     demoLink: "https://my-swiggy-clone.netlify.app/",
@@ -109,7 +109,7 @@ const projects = [
   {
     id: "topcourses",
     title: "TopCourses",
-    category: "Web App",
+    category: "Frontend Web App",
     imgSrc: "/images/p10.png", // thumbnail or video preview
     videoSrc: "https://youtu.be/WQw3eBXRzYU", // optional
     demoLink: "https://top-coursess-app.netlify.app/",
@@ -120,7 +120,7 @@ const projects = [
   {
     id: "text-modifier",
     title: "Text Modifier",
-    category: "Web App",
+    category: "Frontend Web App",
     imgSrc: "/images/p11.png", // update this path as needed
     videoSrc: "", // optional, update if you have a preview
     demoLink: "https://mytextmodifire.netlify.app/", // update if deployed
