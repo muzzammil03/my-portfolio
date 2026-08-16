@@ -20,7 +20,7 @@ const projects = [
     techIcons: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"]
   },
   {
-    id: "netflix-recommendation-system",
+    id: "netflix-Casestudy",
     title: "Netflix Recommendation System",
     category: "AI-ML",
     imgSrc: "/images/p13.png",
