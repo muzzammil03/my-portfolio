@@ -24,7 +24,7 @@ const projects = [
     title: "Netflix Recommendation System",
     category: "AI-ML",
     imgSrc: "/images/p13.png",
-    videoSrc: "",
+    videoSrc: "https://youtu.be/-gHDUQxOCjY",
     githubLink: "https://github.com/muzzammil03/Netflix-Case-Study",
     description: "Built a content-based movie recommendation system using machine learning techniques to suggest relevant titles based on similarity in genre, cast, and description. The project involves extensive data preprocessing and feature engineering on the Netflix dataset, followed by vectorization of text-based features and computing similarity scores between titles. The result is a working recommendation engine that, given a movie or show a user likes, returns a ranked list of similar content, demonstrating a practical application of unsupervised learning and text-based similarity techniques.",
     techIcons: ["Python", "Pandas", "Scikit-learn", "NumPy", "Jupyter Notebook"]
