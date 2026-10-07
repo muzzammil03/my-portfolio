@@ -21,7 +21,7 @@ const educationData = [
     degree: "Higher Secondary Education (11th & 12th) - PCM",
     institute: "Royal Higher Secondary School, Bhopal",
     duration: "Oct 2018 - Jul 2020",
-    grade: "62%",
+    grade: "74%",
     description:
       "I completed my 11th and 12th grades at Royal Higher Secondary School, specializing in Physics, Chemistry, and Mathematics. I demonstrated dedication and competence in these subjects with a good score in my 12th-grade exams and a 74 percentile in the JEE Main. I have gained a solid foundation in these fields and analytical and critical thinking skills. I am eager to apply my knowledge to real-world challenges and pursue further educational opportunities.",
     skills: ["PCM", "English"]
