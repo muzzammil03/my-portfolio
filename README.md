@@ -2,7 +2,7 @@
 
 A modern, responsive, and interactive personal portfolio website showcasing my work in **Web Development**, **AI/ML**, and **Data Analytics**. Built with React, Vite, Tailwind CSS, and Framer Motion.
 
-🔗 **Live Demo:** [Add your deployed link here](https://your-portfolio-link.netlify.app)
+🔗 **Live Demo:** (https://muzzammil-portfolio03.netlify.app/)
 
 ---
 
