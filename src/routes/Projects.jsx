@@ -31,7 +31,7 @@ const ProjectSection = ({ isDarkMode }) => {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="...your hero classes"
+      
     >
       <section
         className={`py-16 px-4 sm:px-6 mt-8 ${
