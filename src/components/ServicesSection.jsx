@@ -16,7 +16,7 @@ function ServicesSection() {
   initial={{ opacity: 0, y: 40 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
-  className="...your hero classes"
+  
 >
     <section className="py-16 px-4 text-center relative">
       <div className="w-full h-[6px] mb-36 bg-[#6c4ced]" />
