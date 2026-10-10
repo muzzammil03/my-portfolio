@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import projects from "../Files/projectList";
 
 const ProjectDetail = ({ isDarkMode }) => {
@@ -19,7 +20,7 @@ const ProjectDetail = ({ isDarkMode }) => {
             Project Not Found
           </p>
           <p className={`mt-2 ${isDarkMode ? "text-gray-400" : "text-gray-500"}`}>
-            Oops! The project you're looking for doesn’t exist.
+            Oops! The project you&apos;re looking for doesn’t exist.
           </p>
         </div>
       </div>
@@ -27,7 +28,7 @@ const ProjectDetail = ({ isDarkMode }) => {
 
   return (
     <div className={`max-w-5xl mx-auto px-4 py-24 sm:py-32 relative ${isDarkMode ? "bg-[#101010] text-white" : "bg-white text-gray-800"}`}>
-      
+
       {/*Back Button */}
       <button
         onClick={() => navigate(-1)}
@@ -44,13 +45,13 @@ const ProjectDetail = ({ isDarkMode }) => {
 
       <div className="rounded-lg overflow-hidden shadow-lg mb-6">
         <iframe
-    src={project.videoSrc.replace("youtu.be", "www.youtube.com/embed")}
-    title={project.title}
-    className="w-full h-64 sm:h-96"
-    frameBorder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-  ></iframe>
+          src={project.videoSrc.replace("youtu.be", "www.youtube.com/embed")}
+          title={project.title}
+          className="w-full h-64 sm:h-96"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
 
       <p className={`mb-6 leading-relaxed ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
