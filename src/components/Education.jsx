@@ -1,4 +1,3 @@
-import React from 'react';
 import educationData from '../Files/educationData';
 import { motion } from "framer-motion";
 
