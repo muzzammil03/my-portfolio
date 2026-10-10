@@ -1,4 +1,3 @@
-import React from "react";
 import { FaGithub, FaLinkedin, FaDribbble } from "react-icons/fa";
 
 const MobileCard = () => {
