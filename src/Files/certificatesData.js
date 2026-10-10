@@ -46,7 +46,7 @@ const certificatesData = [
     issuedBy: "IAST",
     year: "Nov 2022",
     certificateLink: "https://drive.google.com/file/d/1KTtOVOBw0ofVw-mez6s49SpKYCWSAxf_/view",
-    image: "/images/c6.png",
+    image: "/images/c6.webp",
   },
   // {
   //   name: "UI/UX",
