@@ -54,7 +54,7 @@ const About = () => {
             >
               <img
                 onClick={handleImageClick}
-                src="/images/profile.png"
+                src="/images/profile.webp"
                 alt="Muzzammil Ahmed"
                 className="w-full h-full object-cover rounded-full cursor-pointer"
               />
