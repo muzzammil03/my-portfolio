@@ -2,13 +2,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import projects from "../Files/projectList";
 import { motion } from "framer-motion";
-const categories = ["All",  "AI-ML", "Data Analyst", "Frontend Web App"];
+const categories = ["All", "AI-ML", "Data Analyst", "Frontend Web App"];
 
 const ProjectSection = ({ isDarkMode }) => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [visibleCount, setVisibleCount] = useState(6);
-  const buttonClass =
-    "bg-[#6c4ced] text-white px-4 py-2 rounded-md text-sm hover:scale-105 hover:bg-[#4b32a8] transition-all duration-300";
 
   const filteredProjects =
     selectedCategory === "All"
@@ -31,7 +29,6 @@ const ProjectSection = ({ isDarkMode }) => {
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      
     >
       <section
         className={`py-16 px-4 sm:px-6 mt-8 ${
