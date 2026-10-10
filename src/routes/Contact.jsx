@@ -34,7 +34,7 @@ const Contact = ({ isDarkMode }) => {
   initial={{ opacity: 0, y: 40 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
-  className="...your hero classes"
+  
 >
     <div className={`min-h-screen flex flex-col items-center justify-center px-4 ${
       isDarkMode ? 'bg-[#101010] text-white' : 'bg-white text-gray-800'
