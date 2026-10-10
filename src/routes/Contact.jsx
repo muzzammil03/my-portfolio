@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { motion } from "framer-motion";
 import { playSound } from "../utils/playSound";
