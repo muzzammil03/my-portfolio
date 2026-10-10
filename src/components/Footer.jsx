@@ -1,4 +1,3 @@
-import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { FaBehanceSquare } from "react-icons/fa";
