@@ -11,28 +11,17 @@ const Hero = ({ isDarkMode }) => {
   const [index, setIndex] = React.useState(0);
   const [isDownloading, setIsDownloading] = React.useState(false);
   const [spin, setSpin] = React.useState(false);
-
   React.useEffect(() => {
     let timeout;
-    let audio;
 
     if (index < fullName.length) {
-      audio = new Audio("/sounds/typing.mp3");
-      audio.play();
-
       timeout = setTimeout(() => {
         setDisplayedText((prev) => prev + fullName[index]);
         setIndex(index + 1);
       }, 200);
     }
 
-    return () => {
-      clearTimeout(timeout);
-      if (audio) {
-        audio.pause();
-        audio.currentTime = 0;
-      }
-    };
+    return () => clearTimeout(timeout);
   }, [index]);
 
   const handleDownloadClick = () => {
