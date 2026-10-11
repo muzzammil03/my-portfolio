@@ -5,6 +5,12 @@ import { playSound } from "../utils/playSound";
 const Contact = ({ isDarkMode }) => {
   const form = useRef();
   const [loading, setLoading] = useState(false);
+  const [toast, setToast] = useState(null);
+
+  const showToast = (type, text) => {
+    setToast({ type, text });
+    setTimeout(() => setToast(null), 4000);
+  };
 
   const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
@@ -16,17 +22,16 @@ const Contact = ({ isDarkMode }) => {
 
     emailjs.sendForm(serviceID, templateID, form.current, publicKey)
       .then((result) => {
-        console.log('✅ Email sent:', result.text);
-        alert('✅ Message sent successfully!');
+        console.log('Email sent:', result.text);
+        showToast('success', 'Message sent successfully!');
+        form.current.reset();
         setLoading(false);
       })
       .catch((error) => {
-        console.error('❌ Email error:', error.text);
-        alert('❌ Failed to send message.');
+        console.error('Email error:', error.text);
+        showToast('error', 'Failed to send message. Please try again.');
         setLoading(false);
       });
-
-    e.target.reset();
   };
 
   return (
@@ -34,7 +39,6 @@ const Contact = ({ isDarkMode }) => {
   initial={{ opacity: 0, y: 40 }}
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.6 }}
-  
 >
     <div className={`min-h-screen flex flex-col items-center justify-center px-4 ${
       isDarkMode ? 'bg-[#101010] text-white' : 'bg-white text-gray-800'
@@ -115,6 +119,20 @@ const Contact = ({ isDarkMode }) => {
           </button>
         </div>
       </form>
+
+      {/* Toast message */}
+      {toast && (
+        <div
+          role="status"
+          aria-live="polite"
+          className={`fixed top-24 right-4 z-[200] max-w-xs px-5 py-3 rounded shadow-lg text-white text-sm font-medium ${
+            toast.type === 'success' ? 'bg-green-600' : 'bg-red-600'
+          }`}
+        >
+          {toast.type === 'success' ? '✅ ' : '❌ '}
+          {toast.text}
+        </div>
+      )}
 
       {/* CSS for loader */}
       <style>{`
