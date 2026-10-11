@@ -1,12 +1,18 @@
 import { useState, useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 import { Link, useLocation } from "react-router-dom";
-import { MdOutlineDarkMode, MdOutlineWbSunny } from "react-icons/md";
+import {
+  MdOutlineDarkMode,
+  MdOutlineWbSunny,
+  MdVolumeUp,
+  MdVolumeOff,
+} from "react-icons/md";
 import { RiAppsLine } from "react-icons/ri";
-import { playSound } from "../utils/playSound";
+import { playSound, isMuted, toggleMute } from "../utils/playSound";
 
 const Header = ({ isDarkMode, setIsDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const [muted, setMuted] = useState(isMuted());
   const [isScrolled, setIsScrolled] = useState(false);
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const location = useLocation();
@@ -117,6 +123,14 @@ const handleNameClick = () => {
     </Link>
   </li>
 </ul>
+          <button
+            onClick={() => setMuted(toggleMute())}
+            aria-label={muted ? "Unmute sounds" : "Mute sounds"}
+            className={`text-2xl px-2 ${iconColor}`}
+          >
+            {muted ? <MdVolumeOff /> : <MdVolumeUp />}
+          </button>
+
           <button
             onClick={() => {
               setIsDarkMode(!isDarkMode);
