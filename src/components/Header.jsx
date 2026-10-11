@@ -90,7 +90,7 @@ const handleNameClick = () => {
 
       <nav className="p-4 z-3">
         <div className="max-w-7xl mx-auto flex justify-between items-center w-full ml-auto ">
-         <ul className="select-none hidden md:flex space-x-6 text-lg font-semibold mx-auto">
+         <ul className="select-none hidden md:flex items-center space-x-6 text-lg font-semibold mx-auto">
   {[
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
@@ -122,11 +122,32 @@ const handleNameClick = () => {
       Contact Me
     </Link>
   </li>
+  <li>
+    <button
+      onClick={() => setMuted(toggleMute())}
+      aria-label={muted ? "Unmute sounds" : "Mute sounds"}
+      className={`text-2xl flex items-center ${iconColor}`}
+    >
+      {muted ? <MdVolumeOff /> : <MdVolumeUp />}
+    </button>
+  </li>
+  <li>
+    <button
+      onClick={() => {
+        setIsDarkMode(!isDarkMode);
+        playSound("/sounds/click.wav");
+      }}
+      aria-label="Toggle dark mode"
+      className={`text-2xl flex items-center ${iconColor}`}
+    >
+      {isDarkMode ? <MdOutlineWbSunny /> : <MdOutlineDarkMode />}
+    </button>
+  </li>
 </ul>
           <button
             onClick={() => setMuted(toggleMute())}
             aria-label={muted ? "Unmute sounds" : "Mute sounds"}
-            className={`text-2xl px-2 ${iconColor}`}
+            className={`md:hidden text-2xl px-2 ${iconColor}`}
           >
             {muted ? <MdVolumeOff /> : <MdVolumeUp />}
           </button>
@@ -136,7 +157,8 @@ const handleNameClick = () => {
               setIsDarkMode(!isDarkMode);
               playSound("/sounds/click.wav");
             }}
-            className={`text-2xl px-4 ${iconColor}`}
+            aria-label="Toggle dark mode"
+            className={`md:hidden text-2xl px-4 ${iconColor}`}
           >
             {isDarkMode ? <MdOutlineWbSunny /> : <MdOutlineDarkMode />}
           </button>
