@@ -8,6 +8,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ProjectDetail from "./components/ProjectDetails";
 import ProjectSection from "./routes/Projects";
+import NotFound from "./routes/NotFound";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -60,11 +61,13 @@ function App() {
           path="/Projects"
           element={<ProjectSection isDarkMode={isDarkMode} />}
         />
+        
         <Route
           path="/project/:id"
           element={<ProjectDetail isDarkMode={isDarkMode} />}
         />
         <Route path="/contact" element={<Contact isDarkMode={isDarkMode} />} />
+        <Route path="*" element={<NotFound isDarkMode={isDarkMode} />} />
       </Routes>
 
       <Footer />
