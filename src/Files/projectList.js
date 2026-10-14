@@ -8,6 +8,9 @@ const projects = [
     githubLink: "https://github.com/muzzammil03/RAG-chatbot",
     description: "A Retrieval-Augmented Generation (RAG) chatbot that answers questions from your own PDF documents. It splits PDFs into chunks, finds the most relevant ones using hybrid search (BM25 and TF-IDF), reranks them with an LLM, and generates answers using Llama 3.3 through the Groq API. If the answer is not in the documents, it says so instead of guessing.",
     techIcons: ["Python", "BM25", "TF-IDF", "Scikit-learn", "Groq"],
+        problem: "Large language models cannot read your private PDFs, and when asked about them they often make up answers.",
+    solution: "I built a pipeline that splits PDFs into chunks, finds the best matches using hybrid search (BM25 and TF-IDF), reranks them with an LLM, and generates the answer with Llama 3.3 through Groq.",
+    result: "The chatbot answers only from the uploaded documents, shows which file and page it used, and says it doesn't know when the answer isn't there.",
     screenshots: ["/images/rag-1.webp", "/images/rag-2.webp", "/images/rag-3.webp"],
   },
   {
