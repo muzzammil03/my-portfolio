@@ -8,6 +8,7 @@ const projects = [
     githubLink: "https://github.com/muzzammil03/RAG-chatbot",
     description: "A Retrieval-Augmented Generation (RAG) chatbot that answers questions from your own PDF documents. It splits PDFs into chunks, finds the most relevant ones using hybrid search (BM25 and TF-IDF), reranks them with an LLM, and generates answers using Llama 3.3 through the Groq API. If the answer is not in the documents, it says so instead of guessing.",
     techIcons: ["Python", "BM25", "TF-IDF", "Scikit-learn", "Groq"],
+    screenshots: ["/images/rag-1.webp", "/images/rag-2.webp", "/images/rag-3.webp"],
   },
   {
     id: "diwali-sales-analysis",
@@ -17,7 +18,8 @@ const projects = [
     videoSrc: "https://youtu.be/79F2uWqIw08",
     githubLink: "https://github.com/muzzammil03/diwali-sales-analysis",
     description: "A comprehensive data analysis project focused on uncovering Diwali sales trends using Python, Pandas, and data visualization libraries like Matplotlib and Seaborn. The project involves cleaning raw sales data, handling missing values, and performing exploratory data analysis to understand customer behavior across different age groups, cities, and product categories. Key insights include identifying top-performing states, best-selling product categories, and customer demographics that contribute most to revenue, ultimately translating raw numbers into clear, actionable business recommendations.",
-    techIcons: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"]
+    techIcons: ["Python", "Pandas", "Matplotlib", "Seaborn", "Jupyter Notebook"],
+    screenshots: ["/images/rag-1.webp", "/images/rag-2.webp", "/images/rag-3.webp"],
   },
   {
     id: "netflix-Casestudy",
@@ -27,7 +29,8 @@ const projects = [
     videoSrc: "https://youtu.be/-gHDUQxOCjY",
     githubLink: "https://github.com/muzzammil03/Netflix-Case-Study",
     description: "Built a content-based movie recommendation system using machine learning techniques to suggest relevant titles based on similarity in genre, cast, and description. The project involves extensive data preprocessing and feature engineering on the Netflix dataset, followed by vectorization of text-based features and computing similarity scores between titles. The result is a working recommendation engine that, given a movie or show a user likes, returns a ranked list of similar content, demonstrating a practical application of unsupervised learning and text-based similarity techniques.",
-    techIcons: ["Python", "Pandas", "Scikit-learn", "NumPy", "Jupyter Notebook"]
+    techIcons: ["Python", "Pandas", "Scikit-learn", "NumPy", "Jupyter Notebook"],
+    screenshots: ["/images/p13.png", "/images/p13.png", "/images/p13.png"],
   },
   {
     id: "porter-case-study",
