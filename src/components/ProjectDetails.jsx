@@ -123,6 +123,11 @@ const ProjectDetail = ({ isDarkMode }) => {
     ? project.screenshots.filter(Boolean)
     : [];
   const techIcons = project.techIcons || [];
+  const sections = [
+    { label: "Problem", text: project.problem },
+    { label: "Solution", text: project.solution },
+    { label: "Result", text: project.result },
+  ].filter((section) => section.text);
 
   return (
     <div className={`max-w-5xl mx-auto px-4 py-24 sm:py-32 relative ${isDarkMode ? "bg-[#101010] text-white" : "bg-white text-gray-800"}`}>
@@ -158,6 +163,31 @@ const ProjectDetail = ({ isDarkMode }) => {
       <p className={`mb-8 leading-relaxed ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
         {project.description}
       </p>
+
+      {/* Problem / Solution / Result (only if added) */}
+      {sections.length > 0 && (
+        <div className="space-y-4 mb-10">
+          {sections.map((section) => (
+            <div
+              key={section.label}
+              className={`border-l-4 border-[#6c4ced] rounded-r-lg px-5 py-4 ${
+                isDarkMode ? "bg-[#1c1c1c]" : "bg-gray-100"
+              }`}
+            >
+              <h3 className="text-lg font-semibold text-[#6c4ced] mb-1">
+                {section.label}
+              </h3>
+              <p
+                className={`leading-relaxed ${
+                  isDarkMode ? "text-gray-300" : "text-gray-700"
+                }`}
+              >
+                {section.text}
+              </p>
+            </div>
+          ))}
+        </div>
+      )}
 
       {/* Screenshots (only if added) */}
       {screenshots.length > 0 && (
