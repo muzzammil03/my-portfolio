@@ -2,6 +2,7 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
 import { FaBehanceSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { playSound } from "../utils/playSound";
 
@@ -118,25 +119,43 @@ const Hero = ({ isDarkMode }) => {
               isDarkMode ? "text-gray-300" : "text-gray-800"
             }`}
           >
-            Web Developer & Data Analyst
+            AI/ML Engineer • Data Analyst • React Developer
           </h2>
 
+          <p
+            className={`text-sm ${
+              isDarkMode ? "text-gray-400" : "text-gray-600"
+            }`}
+          >
+            Open to freelance projects and full-time roles
+          </p>
+
           <div>
-            <a
-              href="/Muzzammil_CV.pdf"
-              download
-              onClick={() => {
-                handleDownloadClick();
-                playSound("/sounds/popup.mp3");
-              }}
-              className={`ml-auto transition-transform duration-300 px-4 py-3 mt-5 inline-block text-white ${
-                isDownloading
-                  ? "bg-gray-500 cursor-not-allowed"
-                  : "bg-[#6c4ced] hover:scale-105"
-              }`}
-            >
-              {isDownloading ? "Downloading..." : "Download CV"}
-            </a>
+            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mt-5">
+              <a
+                href="/Muzzammil_CV.pdf"
+                download
+                onClick={() => {
+                  handleDownloadClick();
+                  playSound("/sounds/popup.mp3");
+                }}
+                className={`transition-transform duration-300 px-4 py-3 inline-block text-white border-2 border-transparent ${
+                  isDownloading
+                    ? "bg-gray-500 cursor-not-allowed"
+                    : "bg-[#6c4ced] hover:scale-105"
+                }`}
+              >
+                {isDownloading ? "Downloading..." : "Download CV"}
+              </a>
+
+              <Link
+                to="/contact"
+                onClick={() => playSound("/sounds/click.wav")}
+                className="transition-all duration-300 px-4 py-3 inline-block border-2 border-[#6c4ced] text-[#6c4ced] hover:bg-[#6c4ced] hover:text-white hover:scale-105"
+              >
+                Hire Me
+              </Link>
+            </div>
 
             <div className="flex justify-center md:justify-center lg:justify-start gap-6 text-3xl mt-12 md:mt-6 lg:mt-5 mb-12">
               <a
