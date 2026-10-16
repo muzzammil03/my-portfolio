@@ -3,36 +3,36 @@ import { TbDatabaseSearch, TbBrain } from "react-icons/tb";
 
 const servicesData = [
   {
-    title: 'Web Developer',
-    shortDescription: 'Building clean, responsive, and interactive UIs.',
+    title: "Web Development",
+    shortDescription: "Fast, responsive websites and web apps for your business or idea.",
     icon: FaCode,
     details: [
-      "Building responsive websites using HTML, CSS, and JavaScript.",
-      "Developing dynamic, component-based UIs with React.",
-      "Focus on clean, maintainable, and reusable code.",
-      "Optimizing frontend performance and user experience."
+      "Responsive websites and landing pages that look great on phones and computers.",
+      "Interactive web apps built with React, from a simple tool to a multi-page app.",
+      "Clean, reusable code that is easy to update later.",
+      "Working contact forms, dark mode and smooth animations for a better visitor experience."
     ]
   },
   {
-    title: 'AI/ML Engineer',
-    shortDescription: 'Building intelligent systems using ML and modern AI techniques.',
-    icon: TbBrain,
-    details: [
-      "Supervised & Unsupervised Learning (regression, classification, clustering).",
-      "Decision Trees and other classical ML algorithms.",
-      "Understanding and working with Transformer architectures.",
-      "Building RAG (Retrieval-Augmented Generation) based applications."
-    ]
-  },
-  {
-    title: 'Data Analyst',
-    shortDescription: 'Turning raw data into actionable insights.',
+    title: "Data Analysis & Dashboards",
+    shortDescription: "Turn your sales or business data into clear dashboards and insights.",
     icon: TbDatabaseSearch,
     details: [
-      'Collecting, cleaning, and analyzing large datasets.',
-      'Creating dashboards and reports using tools like Excel, Power BI, or Tableau.',
-      'Identifying trends, patterns, and correlations in complex data.',
-      'Communicating findings with data visualizations and presentations.'
+      "Cleaning messy Excel or CSV data so you can trust the numbers.",
+      "Interactive dashboards in Power BI and Excel that show sales, profit, customers and trends.",
+      "Clear answers to questions like which product, region or customer group brings the most revenue.",
+      "Findings explained in simple language, not just charts."
+    ]
+  },
+  {
+    title: "AI & Machine Learning",
+    shortDescription: "Practical AI tools that save time, like document chatbots and prediction models.",
+    icon: TbBrain,
+    details: [
+      "Chatbots that answer questions from your own documents (RAG) without making things up.",
+      "Prediction models, such as estimating delivery time from order data.",
+      "Image classification models, such as detecting objects or masks in photos.",
+      "Simple Streamlit apps so your team can use the model without any coding."
     ]
   }
 ];
