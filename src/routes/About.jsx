@@ -147,6 +147,7 @@ const About = () => {
                   <img
                     src={skill.src}
                     alt={skill.alt}
+                    loading="lazy"
                     className="w-10 h-10 object-contain group-hover:scale-110 transition-transform duration-300"
                   />
                   <span className="text-sm md:text-base font-bold text-center text-[#101010] dark:text-white">
