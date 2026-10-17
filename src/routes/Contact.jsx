@@ -18,6 +18,14 @@ const Contact = ({ isDarkMode }) => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // Honeypot: real visitors never see or fill this hidden field, bots do.
+    if (form.current.elements.bot_field.value) {
+      showToast('success', 'Message sent successfully!');
+      form.current.reset();
+      return;
+    }
+
     setLoading(true);
 
     emailjs.sendForm(serviceID, templateID, form.current, publicKey)
@@ -53,6 +61,17 @@ const Contact = ({ isDarkMode }) => {
         onSubmit={sendEmail}
         className="w-full max-w-2xl flex flex-col space-y-6"
       >
+        {/* Hidden spam trap (keep empty) */}
+        <div
+          aria-hidden="true"
+          style={{ position: "absolute", left: "-9999px", width: "1px", height: "1px", overflow: "hidden" }}
+        >
+          <label>
+            Leave this field empty
+            <input type="text" name="bot_field" tabIndex={-1} autoComplete="off" />
+          </label>
+        </div>
+
         <div className="flex flex-col sm:flex-row sm:space-x-4 space-y-6 sm:space-y-0">
           <div className="flex-1">
             <label className="block mb-1 font-medium">First Name</label>
