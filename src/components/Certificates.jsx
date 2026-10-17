@@ -47,6 +47,7 @@ function Certificates() {
                   <img
                     src={cert.image}
                     alt={cert.name}
+                    loading="lazy"
                     className="w-full h-56 sm:h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
