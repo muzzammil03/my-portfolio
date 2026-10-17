@@ -63,9 +63,10 @@ const ProjectSection = ({ isDarkMode }) => {
           {visibleProjects.map((project, index) => (
             <div key={index} className="flex flex-col">
               <div className="overflow-hidden rounded-lg">
-                <img
+              <img
                   src={project.imgSrc}
                   alt={project.title}
+                  loading="lazy"
                   className="w-full h-64 object-cover transform transition-all duration-300 hover:-translate-y-2 hover:scale-105 hover:shadow-lg"
                 />
               </div>
