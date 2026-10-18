@@ -2,7 +2,9 @@ import { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import { motion } from "framer-motion";
 import { playSound } from "../utils/playSound";
-const Contact = ({ isDarkMode }) => {
+const Contact = ({ isDarkMode, embedded = false }) => {
+  // On the Home page this is a sub-heading; on /contact it is the page heading.
+  const Heading = embedded ? "h2" : "h1";
   const form = useRef();
   const [loading, setLoading] = useState(false);
   const [toast, setToast] = useState(null);
@@ -52,8 +54,8 @@ const Contact = ({ isDarkMode }) => {
       isDarkMode ? 'bg-[#101010] text-white' : 'bg-white text-gray-800'
     }`}>
       <div className="text-center mt-10 mb-6">
-        <h2 className="text-3xl font-bold">Need a Developer?</h2>
-        <h2 className="text-3xl font-bold">Let’s Chat</h2>
+        <Heading className="text-3xl font-bold">Need a Developer?</Heading>
+        <p className="text-3xl font-bold">Let’s Chat</p>
       </div>
 
       <form
