@@ -37,9 +37,9 @@ const About = () => {
       <div className="transition-colors duration-500">
         {/* Heading */}
         <div className="mt-28 mb-4 flex items-center justify-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-center">
+          <h1 className="text-3xl md:text-4xl font-bold text-center">
             My Personal <br /> Information
-          </h2>
+          </h1>
         </div>
 
         {/* About Section */}
