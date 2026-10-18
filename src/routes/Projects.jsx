@@ -75,9 +75,36 @@ const ProjectSection = ({ isDarkMode, embedded = false }) => {
 
               <div className="mt-4 flex-grow">
                 <h3 className="text-xl font-semibold">{project.title}</h3>
-                <p className="text-sm mb-4 text-gray-500 dark:text-gray-400">
+                <p className="text-sm mb-3 text-gray-500 dark:text-gray-400">
                   {project.category}
                 </p>
+
+                {/* Tech tags (first 3, then +N) */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {(project.techIcons || []).slice(0, 3).map((tech) => (
+                    <span
+                      key={tech}
+                      className={`text-xs px-2 py-1 rounded-full ${
+                        isDarkMode
+                          ? "bg-[#2a2a2a] text-gray-300"
+                          : "bg-gray-200 text-gray-700"
+                      }`}
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                  {(project.techIcons || []).length > 3 && (
+                    <span
+                      className={`text-xs px-2 py-1 rounded-full ${
+                        isDarkMode
+                          ? "bg-[#2a2a2a] text-gray-300"
+                          : "bg-gray-200 text-gray-700"
+                      }`}
+                    >
+                      +{project.techIcons.length - 3}
+                    </span>
+                  )}
+                </div>
               </div>
               <div className="mt-auto flex justify-center gap-4 flex-wrap">
                 {project.demoLink && (
