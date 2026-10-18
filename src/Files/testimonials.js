@@ -9,6 +9,23 @@
 //   text: "Muzzammil delivered the dashboard on time and explained every insight clearly.",
 // },
 
-const testimonials = [];
+const testimonials = [
+  {
+    name: "Rahul Sharma",
+    role: "Founder, ABC Store",
+    text: "Muzzammil built our sales dashboard on time and explained every insight clearly.",
+  },
+    {
+    name: "Rahul Sharma",
+    role: "Founder, ABC Store",
+    text: "Muzzammil built our sales dashboard on time and explained every insight clearly.",
+  },
+    {
+    name: "Rahul Sharma",
+    role: "Founder, ABC Store",
+    text: "Muzzammil built our sales dashboard on time and explained every insight clearly.",
+  },
+];
+
 
 export default testimonials;
