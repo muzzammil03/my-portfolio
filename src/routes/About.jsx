@@ -21,9 +21,9 @@ const About = () => {
     { label: "Role", value: "AI/ML Engineer, Data Analyst" },
     { label: "Experience", value: "AI/ML Training Experience" },
     { label: "Residence", value: "Bhopal, Madhya Pradesh, India" },
-    { label: "Freelance", value: "None (Actively Seeking Opportunities)" },
+    { label: "Freelance", value: "Open to freelance projects" },
     { label: "Languages", value: "English, Hindi, Urdu" },
-    { label: "Mobile", value: "+91 8109418626" },
+    { label: "Full-time", value: "Open to opportunities" },
     { label: "Email", value: "muzzammil.cse3@gmail.com", full: true },
   ];
 
@@ -76,7 +76,7 @@ const About = () => {
               Muzzammil Ahmed
             </h3>
             <p className="text-lg text-[#6c4ced] font-semibold mt-1">
-              AI/ML Engineer and Data Analyst
+              AI/ML Engineer, Data Analyst and React Developer
             </p>
             <p className="mt-4 leading-relaxed opacity-80">
               I am a Computer Science postgraduate with a strong interest in
