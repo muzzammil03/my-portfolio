@@ -8,9 +8,9 @@ const Home = ({ isDarkMode }) => {
   return (
     <div >
       <Hero isDarkMode={isDarkMode} />
-      <ProjectSection isDarkMode={isDarkMode} />
+      <ProjectSection isDarkMode={isDarkMode} embedded />
       <ServicesSection isDarkMode={isDarkMode} />
-      <Contact isDarkMode={isDarkMode} />
+      <Contact isDarkMode={isDarkMode} embedded />
       <BackToTopButton />
     </div>
   );
