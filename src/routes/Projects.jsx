@@ -4,7 +4,9 @@ import projects from "../Files/projectList";
 import { motion } from "framer-motion";
 const categories = ["All", "AI-ML", "Data Analyst", "Frontend Web App"];
 
-const ProjectSection = ({ isDarkMode }) => {
+const ProjectSection = ({ isDarkMode, embedded = false }) => {
+  // On the Home page this section is a sub-heading; on /projects it is the page heading.
+  const Heading = embedded ? "h2" : "h1";
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [visibleCount, setVisibleCount] = useState(6);
 
@@ -35,9 +37,9 @@ const ProjectSection = ({ isDarkMode }) => {
           isDarkMode ? "bg-[#101010] text-white" : "bg-white text-gray-900"
         }`}
       >
-        <h1 className="text-3xl md:text-4xl font-bold text-center mb-12">
+        <Heading className="text-3xl md:text-4xl font-bold text-center mb-12">
           Projects
-        </h1>
+        </Heading>
 
         {/* Filter Buttons */}
         <div className="flex flex-wrap justify-center gap-3 mb-10">
