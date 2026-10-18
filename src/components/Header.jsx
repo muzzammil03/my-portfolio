@@ -81,12 +81,12 @@ const handleNameClick = () => {
     <header
       className={`font-syne p-4 flex justify-between items-center md:px-8 md:py-4 fixed top-0 left-0 w-full transition-all duration-300 ${headerBg}`}
     >
-     <h1
+     <p
   onClick={handleNameClick}
   className={`select-none text-2xl font-bold ml-6 hover:scale-125 transition-transform duration-300 cursor-pointer ${portfolioColor}`}
 >
   {names[nameIndex]}
-</h1>
+</p>
 
       <nav className="p-4 z-3">
         <div className="max-w-7xl mx-auto flex justify-between items-center w-full ml-auto ">
