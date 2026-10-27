@@ -78,6 +78,7 @@ const projects = [
     solution: "I built the Home, Search, Offers, Help and Cart pages and a sign-in panel using React, React Router and Tailwind CSS. Restaurant, category and dish information is kept in reusable data files and shown through components.",
     result: "A responsive, multi-page food delivery interface with restaurant cards (ratings, delivery time, offers), category sections and smooth navigation, live on Netlify.",
     techIcons: ["React.js", "React Router", "Tailwind CSS"],
+    screenshots: ["/images/swig1.webp", "/images/swig2.webp", "/images/swig3.webp"]
   },
   {
     id: "vrinda-Strore-Dashboard",
@@ -144,6 +145,7 @@ const projects = [
     solution: "I built a React app that fetches course data from an API, shows a loading spinner while it loads, filters courses by category (Development, Business, Design, Lifestyle), and lets users like or unlike a course with instant toast messages.",
     result: "A clean, responsive course browser where users can switch categories in one click, see friendly messages for network errors, and mark their favourite courses, live on Netlify.",
     techIcons: ["React.js", "Tailwind CSS", "React Toastify"],
+    screenshots: ["/images/top1.webp", "/images/top2.webp", "/images/top3.webp"]
   },
   {
     id: "text-modifier",
@@ -158,6 +160,7 @@ const projects = [
     solution: "I built a React app where users type or paste text and use buttons to convert it to uppercase, lowercase, title case or alternating case, remove extra spaces, copy it, or clear it. The word and character counts update live and there is a text preview.",
     result: "A fast, easy tool for students, writers and developers, with instant feedback messages, a dark mode and an About page, live on Netlify.",
     techIcons: ["React.js", "Bootstrap"],
+    
   },
 ];
 
