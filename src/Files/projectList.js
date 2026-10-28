@@ -92,7 +92,7 @@ const projects = [
     solution: "I cleaned the data and used pivot tables and charts in Excel to build a dashboard covering sales versus orders by month, men versus women, age and gender, sales channels, order status and the top 5 states.",
     result: "Women make up about 64% of sales. Amazon is the biggest channel (about 35%), followed by Myntra and Flipkart. Maharashtra is the top state, and about 93% of orders are delivered successfully.",
     techIcons: ["Excel", "Pivot Tables", "Dashboard"],
-    screenshots: ["/images/v1.webp", "/images/v2.webp", "/images/v3.webp"]
+    
   },
   {
     id: "zomato-dashboard",
@@ -119,6 +119,7 @@ const projects = [
     solution: "I joined the orders and details data in Power BI and built charts for monthly profit, profit by sub-category, sales by state and top customers, plus donut charts for category and payment mode, KPI cards, and slicers for quarter and state.",
     result: "Maharashtra and Madhya Pradesh bring the most sales, Printers are the most profitable sub-category, and Cash on Delivery is the most used payment mode (about 44% of items), so a manager can find these answers in seconds.",
     techIcons: ["Power BI"],
+    screenshots: ["/images/v1.webp", "/images/v2.webp", "/images/v3.webp"]
   },
   {
     id: "video-game-sales-dashboard",
