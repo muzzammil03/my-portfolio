@@ -92,6 +92,7 @@ const projects = [
     solution: "I cleaned the data and used pivot tables and charts in Excel to build a dashboard covering sales versus orders by month, men versus women, age and gender, sales channels, order status and the top 5 states.",
     result: "Women make up about 64% of sales. Amazon is the biggest channel (about 35%), followed by Myntra and Flipkart. Maharashtra is the top state, and about 93% of orders are delivered successfully.",
     techIcons: ["Excel", "Pivot Tables", "Dashboard"],
+    screenshots: ["/images/v1.webp", "/images/v2.webp", "/images/v3.webp"]
   },
   {
     id: "zomato-dashboard",
@@ -131,6 +132,7 @@ const projects = [
     solution: "I built a one-page Power BI report with a line chart of global sales by year, a line chart of games released per year, a donut chart of sales by platform, a bar chart of sales by genre, a summary card for EU sales, and a platform slicer.",
     result: "Anyone can explore how the industry changed over time and pick a single platform to see its own sales trend and best genres, without reading the raw data.",
     techIcons: ["Power BI"],
+    screenshots: ["/images/game1.webp", "/images/game2.webp", "/images/game3.webp"]
   },
   {
     id: "topcourses",
@@ -160,6 +162,7 @@ const projects = [
     solution: "I built a React app where users type or paste text and use buttons to convert it to uppercase, lowercase, title case or alternating case, remove extra spaces, copy it, or clear it. The word and character counts update live and there is a text preview.",
     result: "A fast, easy tool for students, writers and developers, with instant feedback messages, a dark mode and an About page, live on Netlify.",
     techIcons: ["React.js", "Bootstrap"],
+    screenshots: ["/images/text2.webp", "/images/text3.webp", "/images/text1.webp"]
     
   },
 ];
