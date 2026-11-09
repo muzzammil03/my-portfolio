@@ -38,6 +38,7 @@ const projects = [
     solution: "I cleaned the dataset, split columns that hold many values (cast, directors, countries, genres), and analysed content type, top countries, genres, actors, directors and the best months to release content.",
     result: "About 70% of the catalogue is movies and 30% TV shows. The United States produces the most titles, followed by India and the United Kingdom, and International Movies, Dramas and Comedies are the biggest genres.",
     techIcons: ["Python", "Pandas", "NumPy", "Matplotlib", "Seaborn", "Jupyter Notebook"],
+    screenshots: ["/images/net-1.png", "/images/net-2.png", "/images/net-3.png","/images/net-4.png"]
   },
   {
     id: "porter-case-study",
@@ -92,6 +93,7 @@ const projects = [
     solution: "I cleaned the data and used pivot tables and charts in Excel to build a dashboard covering sales versus orders by month, men versus women, age and gender, sales channels, order status and the top 5 states.",
     result: "Women make up about 64% of sales. Amazon is the biggest channel (about 35%), followed by Myntra and Flipkart. Maharashtra is the top state, and about 93% of orders are delivered successfully.",
     techIcons: ["Excel", "Pivot Tables", "Dashboard"],
+    screenshots: ["/images/ex-1.png","/images/ex-2.png","/images/ex-3.png"]
     
   },
   {
@@ -106,6 +108,7 @@ const projects = [
     solution: "I cleaned the dataset, converted the rating column into numbers, and compared restaurant types, votes, ratings, cost for two and online ordering using charts and a heatmap.",
     result: "Dining restaurants receive the most votes. In this dataset, restaurants that accept online orders have a higher average rating (about 3.9) than those that don't (about 3.5).",
     techIcons: ["Python", "Pandas", "NumPy", "Seaborn"],
+    screenshots: ["/images/zom-1.png","/images/zom-2.png","/images/zom-3.png","/images/zom-4.png"]
   },
   {
     id: "madav-ecommerce-sales-dashboard",
