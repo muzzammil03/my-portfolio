@@ -65,6 +65,7 @@ const projects = [
     solution: "I trained a CNN from scratch with TensorFlow and Keras on images with and without masks, and used hyperparameter tuning and callbacks to reduce overfitting. I then built a Streamlit app that uses OpenCV to prepare the image before prediction.",
     result: "Users can upload a photo or paste an image link and instantly see whether the person is wearing a mask or not.",
     techIcons: ["Python", "TensorFlow", "Keras", "OpenCV", "NumPy", "Streamlit"],
+    screenshots: ["/images/f-1.webp", "/images/f-2.webp", "/images/f-3.webp"]
   },
   {
     id: "swiggy-clone",
